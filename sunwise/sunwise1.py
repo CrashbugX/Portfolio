@@ -10,25 +10,6 @@
 # (2,1) -> (2,0) -> (1,0) -> (1,1). At this point, all squares have been visited, and
 # you are facing right.
 
-#TEST PROGRAM
-
-#print('Define the dimensions N and M of the grid.')
-#n = input('Enter the value for N: ')
-#m = input('Enter the value for M: ')
-#print('Grid size: ' + n + ' x ' + m)
-#res = 'X'
-#if(n>m):
-#    if((int(m) % 2) == 1):
-#        res = 'D'
-#    else:
-#        res = 'U'
-#else:
-#    if((int(n)%2) == 1):
-#        res = 'R'
-#    else:
-#        res = 'L'
-#print('Final direction is: ' + res)
-
 dat = []
 res = []
 #print('T Value:')
