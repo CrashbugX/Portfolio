@@ -24,13 +24,11 @@ min_chars = 0
 for i in range(0,2):
     #Number Processing
     dates[i] = dates[i].strip()
-    dates[i] = dates[i].replace('C', '')
-    dates[i] = dates[i].replace('D', '')
     length = len(dates[i])
-    if(dates[i][length-1] == 'B'):
-        num = int(dates[i].replace('B', ''))*-1
+    if(dates[i][length-1] == 'C'):
+        num = int(dates[i].replace('BC', ''))*-1
     else:
-        num = int(dates[i].replace('A', '')) - 1
+        num = int(dates[i].replace('AD', '')) - 1
     dates[i] = num + 754
 for i in range(dates[0], dates[1]+1):
     #print ('Decimal : ' + str(i))
